@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Genius - Arduino</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="GeniusLogo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Projeto Genius</h1>
+    <p>Um jogo de memória com Arduino</p>
+  </header>
+    <div class="fotos-wrapper">
+    <a href="fotos.html" class="btn-fotos">
+        <i class="fas fa-camera"></i> Fotos
+    </a>
+    </div>
+  <div class="container">
+    <section class="integrantes">
+      <h2><i class="fas fa-users"></i> Integrantes</h2>
+      <ul>
+        <li><strong>Bruno José</strong> – Programação e Design do Site</li>
+        <li><strong>Bruno Sottomayor</strong> – Documentação e Testes</li>
+        <li><strong>Igor Kauã</strong> – Montagem e Testes</li>
+        <li><strong>Matheus Conolly</strong> – Gerenciamento e Ideias de melhoras </li>
+      </ul>
+    </section>
+
+    <section class="descricao">
+      <h2><i class="fas fa-gamepad"></i> Sobre o Projeto</h2>
+      <p>O Genius é um clássico jogo de memória que desafia os jogadores a repetirem sequências de luzes e sons cada vez mais complexas.</p>
+      <p>Nosso objetivo foi recriar essa experiência nostálgica usando tecnologias modernas com Arduino Uno, LEDs RGB, botões capacitivos e um buzzer para efeitos sonoros.</p>
+      <div class="tech-tags">
+        <span class="tag">Arduino</span>
+        <span class="tag">Eletrônica</span>
+        <span class="tag">Jogos</span>
+      </div>
+    </section>
+
+    <section class="componentes">
+      <h2><i class="fas fa-microchip"></i> Componentes</h2>
+      <ul>
+        <li><strong>Arduino Uno R3 (RoboCore)</strong> - Placa controladora</li>
+        <li><strong>4x LEDs RGB</strong> - Azul, Vermelho, Verde e Amarelo</li>
+        <li><strong>4x Botões capacitivos</strong> - Interface do usuário</li>
+        <li><strong>Buzzer ativo</strong> - Efeitos sonoros</li>
+        <li><strong>Protoboard 830pts</strong> - Montagem do circuito</li>
+        <li><strong>Jumpers e resistores</strong> - Conexões e proteção</li>
+        
+      </ul>
+    </section>
+
+    <section class="como-fizemos">
+      <h2><i class="fas fa-code"></i> Implementação</h2>
+      <p>Desenvolvemos um circuito completo na protoboard com os LEDs conectados às portas PWM do Arduino para controle de intensidade. Cada botão está mapeado para um LED especifico e um toque unico no buzzer.</p>
+      <p>O código foi escrito em C++ utilizando a IDE Arduino, implementando:</p>
+      <ul>
+        <li>Geração aleatória de sequências</li>
+        <li>Validação da entrada do jogador</li>
+        <li>Sistema de pontuação progressiva (A cada termino de sequência)</li>
+        <li>Feedback visual e sonoro</li>
+      </ul>
+    </section>
+
+    <section class="desafios">
+      <h2><i class="fas fa-exclamation-triangle"></i> Desafios</h2>
+              <p>Enfrentamos vários obstáculos durante o desenvolvimento:</p>
+            <ul>
+            <li><strong>Montagem dos Componentes:</strong> Tentamos Otimizar os Fios para Reduzir ao Máximo</li>
+            <li><strong>Conexões:</strong> Tivemos que lidar com conexões instáveis de Jumpers e LED`s.</li>
+            <li><strong>Interferência:</strong> Em alguns momentos, os componentes interferiram nos sinais dos botões e LEDs.</li>
+
+            </ul>
+
+      </ul>
+    </section>
+
+    <section class="aprendizados">
+      <h2><i class="fas fa-graduation-cap"></i> Aprendizados</h2>
+      <p>Este projeto nos proporcionou conhecimentos valiosos:</p>
+      <ul>
+        <li>Princípios de eletrônica digital e analógica</li>
+        <li>Programação de microcontroladores</li>
+        <li>Técnicas de depuração de hardware</li>
+        <li>Trabalho em equipe multidisciplinar</li>
+        <li>Gestão de projeto com versionamento</li>
+      </ul>
+    </section>
+
+    <section class="conclusao">
+      <h2><i class="fas fa-flag-checkered"></i> Conclusão</h2>
+      <p>O projeto foi um sucesso completo, resultando em um produto funcional, divertido e educativo. Demonstramos que é possível criar experiências interativas complexas com componentes acessíveis.</p>
+      <p><strong>Próximos passos:</strong> expandir o projeto com modos de jogo, armazenamento de pontuação e integração com aplicativos móveis.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p><i class="fas fa-code"></i> Projeto desenvolvido por estudantes da CESAR School :D - 2025.</p>
+    <div class="social-links">
+      <a href="https://github.com/brunodf081" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/brunoduarte18/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      
+    </div>
+  </footer>
+</body>
+</html>
